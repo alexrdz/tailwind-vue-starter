@@ -1,7 +1,16 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div class="">
+    <div class="container mx-auto text-center md:bg-grey-lightest">
+      <img src="./assets/logo.png">
+      <br>
+      <button class="btn-blue hover:bg-blue-light">
+        Button 1
+      </button>
+      <button class="btn-blue">
+        Button 2
+      </button>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -10,14 +19,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
